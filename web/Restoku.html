@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- link to swiper from cdn -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+    
+    <!-- link to sweetalert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- box icon -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- link to css -->
+     <link rel="stylesheet" href="CSS/Restoku.css">
+    <title>Restoku</title>
+</head>
+<body>
+    <!-- header -->
+     <header>
+        <a href="#" class="Logo"><i class='bx bxs-bowl-hot'></i>Restoku.</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Location</a>
+            <a href="#order">Book</a>            
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <a href="loginForm.jsp" class='bx bx-user'></a>
+        </div>
+     </header>
+
+    
+     <!-- Home -->
+      <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Main Dishes</span>
+                        <h3>Pasta Carbonara</h3>
+                        <p>pasta dish made with meat, hard cheese, eggs, and salt</p>
+                        <a href="#order" class="btn">Book Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/image1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Main Dishes</span>
+                        <h3>Autumn & Pear</h3>
+                        <p>Chocolate cream with chocolate feulletine and a pear </p>
+                        <a href="#order" class="btn">Book Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/image15.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Main Dishes</span>
+                        <h3>Salmon & Vegetable Salad</h3>
+                        <p>House smoked salmon with mixed greens on</p>
+                        <a href="#order" class="btn">Book Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="image/image3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+
+
+      <!-- Dishes -->
+      <section class="dishes" id="dishes">
+        <h3 class="sub-heading"> Our Dishes </h3>
+        <h1 class="heading"> Popular Dishes </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <!-- <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a> -->
+                <img src="image/image1.png" alt="">
+                <h3>Pasta Carbonara</h3>
+                <span>Rp. 115.000,00</span>
+            </div>
+
+            <div class="box">
+                <!-- <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a> -->
+                <img src="image/image3.png" alt="">
+                <h3>Smoked Salmon</h3>
+                <span>Rp. 160.000,00</span>
+            </div>
+
+            <div class="box">
+                <!-- <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a> -->
+                <img src="image/image20.png" alt="">
+                <h3>Spicy Chicken Wontons</h3>
+                <span>Rp. 37.000,00</span>
+            </div>
+
+            <div class="box">
+                <!-- <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a> -->
+                <img src="image/image13.png" alt="">
+                <h3>Winter Chocolate</h3>
+                <span>Rp. 60.000,00</span>
+            </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- about us -->
+       <section class="about" id="about">
+        <h3 class="sub-heading">About Us</h3>
+        <h1 class="heading">Why You Should Choose Us?</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="image/chef.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>best food in the country</h3>
+                <p>Welcome to Restoku, a place where flavor and warmth come together in perfect harmony. Starting 2019 We serve a variety of delicious dishes made from fresh and high-quality ingredients, prepared with love and dedication by our experienced chefs.
+                    At Restoku, you will experience a warm and welcoming atmosphere, ideal for gathering with family, friends, or even enjoying special moments with your loved ones. The elegant and cozy decor creates the perfect environment to savor every dish we serve..</p>
+                <p>We pride ourselves on offering an unforgettable culinary experience, with a diverse menu ranging from authentic traditional dishes to innovative modern creations. Every bite is a celebration of flavors that will delight your palate and keep you coming back for more</p>
+                <div class="icon-container">
+                    <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>easy payment</span>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-headset"></i>
+                        <span>10 AM - 10 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+
+
+
+       <!-- menu -->
+       <section class="menu" id="menu">
+        <h3 class="sub-heading">our menu</h3>
+        <h1 class="heading">delicious food</h1>
+
+        <h2 class="type">Appetizers</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="image/image18.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Nachos & Chili Carne</h3>
+                    <p>Topped with ground beef , cheese, lettuce, tomatoes, sour cream and salsa.</p>
+                    <span class="price">Rp. 80.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image19.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>French Fries</h3>
+                    <p>With tomato sauce on the center.</p>
+                    <span class="price">Rp. 30.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image20.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Spicy Chicken Wontons</h3>
+                    <p>Chicken wontons paired with a House Special Sauce.</p>
+                    <span class="price">Rp. 37.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image21.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Cappellettis with Crab</h3>
+                    <p>Served with clams, zucchini, and kumquats in a buttery sauce.</p>
+                    <span class="price">Rp. 105.000,000</span>
+                </div>
+            </div>
+            </div>
+        <h2 class="type">Main Course</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="image/image1.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Pasta Carbonara</h3>
+                    <p>Pasta dish made with meat, hard cheese, eggs, and salt.</p>
+                    <span class="price">Rp. 115.000,00</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="image/image2.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Roast Beef Steak</h3>
+                    <p>Juicy cut of meat served with vegetables and your favorite sauce.</p>
+                    <span class="price">Rp. 19.000,00</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="image/image3.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Smoked Salmon</h3>
+                    <p>House smoked salmon with mixed greens ons.</p>
+                    <span class="price">Rp. 93.500</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="image/image4.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Sandwich Toast</h3>
+                    <p>Sandwich toast with Idli Batter.</p>
+                    <span class="price">Rp. 60.000,00</span>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image5.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Grilled Cheese Toast</h3>
+                    <p>Hokkaido milk bread grilled with Japanese style cheese toast.</p>
+                    <span class="price">Rp. 67.000,00,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image6.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Grilled Dory Steak</h3>
+                    <p>Soft grilled Dory fish steak rick with protein.</p>
+                    <span class="price">Rp. 110.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image7.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Nasi Goreng</h3>
+                    <p>Nasi goreng with sunnny side up egg and chopped chicken.</p>
+                    <span class="price">Rp. 50.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image8.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Nasi Goreng Seafood</h3>
+                    <p>Nasi goreng with prawn and kerupuk.</p>
+                    <span class="price">Rp. 66.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image9.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Croque Monsieur</h3>
+                    <p>Hot sandwich made with ham and cheese.</p>
+                    <span class="price">Rp. 74.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image10.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Prawn Pasta</h3>
+                    <p>Prawn pasta with tomato, chilli, and basil.</p>
+                    <span class="price">Rp. 120.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image11.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Pasta & Meatball Bolognese</h3>
+                    <p>served with delicious bolognese sauce.</p>
+                    <span class="price">Rp. 120.000,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="image/image12.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Chicken Salad</h3>
+                    <p>Greek cuisine spinach salad with chicken.</p>
+                    <span class="price">Rp. 66.000,00</span>
+                </div>
+            </div>
+            </div>
+            
+
+            <h2 class="type">Dessert</h2>
+            <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="image/image13.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Chocolate Mousse</h3>
+                    <p>Chocolate mousse plated dessert with caramel sauce.</p>
+                    <span class="price">Rp. 56.000,00</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="image/image14.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Sakura Cheesecake</h3>
+                    <p>Fine dining style cheesecake plated dessert.</p>
+                    <span class="price">Rp. 56.000,00</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="image/image15.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Autumn & Pear</h3>
+                    <p>Chocolate cream with chocolate feulletine and a pear .</p>
+                    <span class="price">Rp. 58.000,00</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="image/image17.png" alt="">
+                    <!-- <a href="#" class="fas fa-heart"></a> -->
+                </div>
+                <div class="content">
+                    <!-- <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div> -->
+                    <h3>Winter Chocolate</h3>
+                    <p>Chocolate cream with dulcey de leche cremeux and cardamom sorbet.</p>
+                    <span class="price">Rp. 60.000,00</span>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+            <h2 class="type">Beverages</h2>
+            <div class="box-container">
+                <div class="box">
+                    <div class="imagedrink">
+                        <img src="image/image22.png" alt="">
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                    </div>
+                    <div class="content">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div> -->
+                        <h3>Iced Tea</h3>
+                        <p>Iced tea with mint leaves.</p>
+                        <span class="price">Rp. 21.000,00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="imagedrink">
+                        <img src="image/image23.png" alt="">
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                    </div>
+                    <div class="content">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div> -->
+                        <h3>Orange Drink</h3>
+                        <p>Sweet, sugary, orange drink.</p>
+                        <span class="price">Rp. 21.000,00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="imagedrink">
+                        <img src="image/image24.png" alt="">
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                    </div>
+                    <div class="content">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div> -->
+                        <h3>Salted Brown Butter Toffee</h3>
+                        <p>Coffee with Monin Gourmet syrup.</p>
+                        <span class="price">Rp. 36.000,00</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="imagedrink">
+                        <img src="image/image25.png" alt="">
+                        <!-- <a href="#" class="fas fa-heart"></a> -->
+                    </div>
+                    <div class="content">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div> -->
+                        <h3>Nice woof</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, molestias.</p>
+                        <span class="price">Rp. 93.500</span>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+
+            <!-- Review -->
+             <section class="review" id="review">
+                <h3 class="sub-heading">Our Location</h3>
+                <h1 class="heading">Come Here for delicious food</h1>
+
+                <div class="row">
+                    <div class="image">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2466148040485!2d106.82233870996293!3d-6.362120062210379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec18c3e8e717%3A0x9f2283e905986b55!2sCEP%20CCIT%20FTUI!5e0!3m2!1sen!2sid!4v1719282389455!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                
+                    <div class="content">
+                        <h3>Where We Can Be Found</h3>
+                        <p>Gedung Enginering Center Lt. 1, FTUI Kampus Baru UI Depok, Jalan Prof. DR. Ir R. Roosseno, Kukusan, Kecamatan Beji, Kota Depok, Jawa Barat 16425.</p>
+                        <div class="icon-container">
+                            <div class="icon">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>easy payment</span>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-headset"></i>
+                                <span>10 AM - 10 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+
+
+
+             <!-- Order -->
+             <section class="order" id="order">
+                <h3 class="sub-heading">Reservation</h3>
+                <h1 class="heading">Book your table now</h1>
+
+                <form id= "reservationForm" action="addReservation.jsp" method="post" onsubmit="return validateForm()">
+                    <div class="inputbox">
+                        <div class="input">
+                            <label>Your Name</label>
+                            <input type="text" name="first_name" placeholder="enter your first name here" id="first-input">
+                        </div>
+
+                        <div class="input">
+                            <label>Your Last Name</label>
+                            <input type="text" name="last_name" placeholder="enter your last name here" id="last-input">
+                        </div>
+
+                        <div class="input">
+                            <label>Your Phone Number</label>
+                            <input type="number" name="phone" placeholder="enter your phone number here. ex: 081234567890 or 0812345678901" id="number-input">
+                        </div>
+
+                        <div class="input">
+                            <label>Your Email</label>
+                            <input type="email" name="email" placeholder="enter your email here" id="email-input">
+                        </div>
+
+                        <div class="input">
+                            <label>How Many People</label>
+                            <input type="number" name="people" placeholder="enter how much people will come here" id="people-input">
+                        </div>
+
+                        <div class="input">
+                            <label>Date</label>
+                            <input type="date" name="date" id="datePicker" placeholder="select date">
+                        </div>
+
+                          <div class="input">
+                            <label>Time (10 am - 8 pm)</label>
+                            <select name="time" id="timePicker">
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                                <option value="18:00">06:00 PM</option>
+                                <option value="19:00">07:00 PM</option>
+                                <option value="20:00">08:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="book now" class="btn" id="booknow">
+                </form> 
+            </section>
+
+             <!-- footer -->
+              <section class="footer">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>Location</h3>
+                        <a href="#">Depok</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Links</h3>
+                        <a href="#">home</a>
+                        <a href="#">dishes</a>
+                        <a href="#">about</a>
+                        <a href="#">menu</a>
+                        <a href="#">review</a>
+                        <a href="#">order</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>Contact Info</h3>
+                        <a href="#">+62 1188-9763-0091</a>
+                        <a href="#">+62 0098-4324-5353</a>
+                        <a href="#">inirestoku@gmail.com</a>
+                    </div> 
+                </div>
+
+                <div class="credit">Project 4 2024, <span> By Team 8</span></div>
+              </section>
+
+
+
+
+
+
+
+
+    
+
+        
+    <!-- js sweetalert2 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- js swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- link js -->
+    <script src="JS/Restoku.js"></script>
+</body>
+</html>

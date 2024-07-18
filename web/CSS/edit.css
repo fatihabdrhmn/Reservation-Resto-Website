@@ -1,0 +1,117 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Variables for colors and shadow */
+:root {
+    --orange: #ff9f0d;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+/* General styles */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    padding: 2rem;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Form styling */
+form {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.inputbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.inputbox .input {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+}
+
+.inputbox .input label {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: .5rem;
+}
+
+.inputbox .input input,
+.inputbox .input select{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.inputbox .input input:focus,
+.inputbox .input select:focus{
+    border: .1rem solid var(--orange);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: var(--orange);
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .inputbox {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
