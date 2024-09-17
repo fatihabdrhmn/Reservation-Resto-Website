@@ -1,3 +1,10 @@
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
 
 
 var swiper = new Swiper(".home-slider", {
@@ -13,6 +20,8 @@ var swiper = new Swiper(".home-slider", {
     },
     loop:true,
   });
+  
+  
 document.addEventListener('DOMContentLoaded', (event) => {
     const datePicker = document.getElementById('datePicker');
     const today = new Date();
