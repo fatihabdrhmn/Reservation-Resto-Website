@@ -7,7 +7,7 @@
     <body>
 
         <p>Sorry, an error occured!</p>
-        <jsp:include page="Restoku.jsp"></jsp:include>
+        <jsp:include page="Restoku.html"></jsp:include>
 
     </body>
 </html>

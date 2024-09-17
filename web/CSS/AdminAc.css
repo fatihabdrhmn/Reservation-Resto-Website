@@ -1,0 +1,205 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Variables for colors and shadow */
+:root {
+    --orange: #ff9f0d;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+/* General styles */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    padding: 2rem;
+    background-color: #f4f4f9;
+}
+
+h1, h3 {
+    text-align: center;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--black);
+    box-shadow: var(--box-shadow);
+}
+
+header .Logo {
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar a {
+    color: #fff;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+header .icons i, header .icons a {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+
+/* Form styling */
+form {
+    max-width: 60rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0, 0, 0, .2);
+}
+
+form input, form button {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+form input {
+    background: #eee;
+    color: var(--black);
+}
+
+form input:focus {
+    border: .1rem solid var(--orange);
+}
+
+form button {
+    background: var(--black);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background: var(--orange);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: .1rem solid rgba(0, 0, 0, .2);
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background: var(--black);
+    color: #fff;
+}
+
+td {
+    color: var(--black);
+}
+
+td a {
+    color: var(--black);
+    margin-right: 1rem;
+}
+
+td a:hover {
+    color: var(--orange);
+}
+
+/* Button styling */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.button-container .btn:hover {
+    background: var(--orange);
+}
+
+/* Responsive design */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    form input, form button {
+        width: calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+    }
+
+    header .icons {
+        margin-left: auto;
+    }
+
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}

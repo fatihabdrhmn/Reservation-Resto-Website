@@ -27,19 +27,19 @@
     </style>
 </head>
 <body>
-    <%@include file="Restoku.html" %>
+    <%@include file="AddUserform.jsp" %>
     <!-- Sisipkan SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         Swal.fire({
             icon: 'success',
             title: 'Success!',
-            text: 'Reservation successfully submitted! For more info, please contact +62 1188-9763-0091.',
+            text: 'User Account has been created!',
             confirmButtonText: 'OK'
         }).then((result) => {
             if (result.isConfirmed) {
                 // Redirect to a different page if needed
-                window.location.href = 'Restoku.html'; // Ganti dengan halaman tujuan setelah sukses
+                window.location.href = 'User.jsp'; // Ganti dengan halaman tujuan setelah sukses
             }
         });
     </script>

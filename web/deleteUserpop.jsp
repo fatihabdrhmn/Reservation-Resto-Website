@@ -27,20 +27,15 @@
     </style>
 </head>
 <body>
-    <%@include file="Restoku.html" %>
+    <%@include file="User.jsp" %>
     <!-- Sisipkan SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         Swal.fire({
             icon: 'success',
             title: 'Success!',
-            text: 'Reservation successfully submitted! For more info, please contact +62 1188-9763-0091.',
+            text: 'Admin has been deleted.',
             confirmButtonText: 'OK'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                // Redirect to a different page if needed
-                window.location.href = 'Restoku.html'; // Ganti dengan halaman tujuan setelah sukses
-            }
         });
     </script>
 </body>

@@ -22,45 +22,9 @@
     transition: all .2s linear;
 }
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
-}
-
-/* all section */
-section {
-    padding: 5rem 9%;
-}
-
-.sub-heading {
-    text-align: center;
-    color: var(--orange);
-    font-size: 2.5rem;
-    padding-top: 1rem;
-}
-
-.heading {
-    text-align: center;
-    color: var(--black);
-    font-size: 3rem;
-    padding-top: .5rem;
-    text-transform: uppercase;
-}
-
-
 body {
     padding: 2rem;
     background-color: #f4f4f9;
-}
-
-
-h3 {
-    text-align: center;
-    color: var(--orange);
-    font-size: 2.5rem;
-    padding-top: 1rem;
 }
 
 h1 {
@@ -131,7 +95,6 @@ form {
 
 .btn:hover {
     background: var(--orange);
-    letter-spacing: .1rem;
 }
 
 /* Responsive design */
@@ -151,4 +114,9 @@ form {
     html {
         font-size: 50%;
     }
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
 }

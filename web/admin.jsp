@@ -27,6 +27,7 @@
         <nav class="navbar">
             <a href="admin.jsp">on process</a>
             <a href="Done.jsp">done</a>
+            <a href="User.jsp">user</a>
         </nav>
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
