@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
     static String sql;
     public LoginServlet() { 
     }
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    public void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String uName = request.getParameter("username");
         String pass = request.getParameter("password");

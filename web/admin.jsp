@@ -18,7 +18,7 @@
 
     <!-- Link to css -->
     <link rel="stylesheet" href="CSS/admin.css">
-    <title>Restoku</title>
+    <title>AdminResto</title>
 </head>
 <body>
     <!-- header -->

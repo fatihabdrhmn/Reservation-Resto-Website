@@ -35,25 +35,7 @@ public class ReservationDAO {
         return status;
     }
     
-    public static int update(Reservation rs) {
-        int status = 0;
-        try {
-            conn = new DBConnection().setConnection();
-            ps = conn.prepareStatement("update restoku_db.reservations set first_name=?, last_name=?, phone=?, email=?, people=?, reservation_date=?, reservation_time=? where id_reservation=?");
-            ps.setString(1, rs.getFirst_name());
-            ps.setString(2, rs.getLast_name());
-            ps.setString(3, rs.getPhone());
-            ps.setString(4, rs.getEmail());
-            ps.setInt(5, rs.getPeople());
-            ps.setString(6, rs.getDate());
-            ps.setString(7, rs.getTime());
-            ps.setInt(8, rs.getId_reservation());
-            status = ps.executeUpdate();
-        } catch (SQLException e) {
-            System.out.println(e);
-        }
-        return status;
-    }
+ 
     
     public static List<Reservation> getAllRecords() {
         List<Reservation> list = new ArrayList<>();
@@ -80,6 +62,38 @@ public class ReservationDAO {
         }
         return list;
     }
+    
+    public static int update(Reservation reservation) {
+    int status = 0;
+    Connection conn = null;
+    PreparedStatement ps = null;
+
+    try {
+        conn = new DBConnection().setConnection();
+        String sql = "UPDATE restoku_db.reservations SET first_name = ?, last_name = ?, phone = ?, email = ?, people = ?, reservation_date = ?, reservation_time = ? WHERE id_reservation = ?";
+        ps = conn.prepareStatement(sql);
+        ps.setString(1, reservation.getFirst_name());
+        ps.setString(2, reservation.getLast_name());
+        ps.setString(3, reservation.getPhone());
+        ps.setString(4, reservation.getEmail());
+        ps.setInt(5, reservation.getPeople());
+        ps.setString(6, reservation.getDate());
+        ps.setString(7, reservation.getTime());
+        ps.setInt(8, reservation.getId_reservation());
+
+        status = ps.executeUpdate(); // Returns 1 if the update was successful
+    } catch (SQLException e) {
+        e.printStackTrace();
+    } finally {
+        try {
+            if (ps != null) ps.close();
+            if (conn != null) conn.close();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+    return status;
+}
     
     public static Reservation getRecordById(int id) {
         Reservation r = null;
@@ -150,6 +164,23 @@ public class ReservationDAO {
         }
         return status;
     }
+    
+    public static int delete(Reservation reservation) {
+    if (reservation == null || reservation.getId_reservation() <= 0) {
+        return 0; // Invalid reservation ID, return failure status
+    }
+
+    int status = 0;
+    try (Connection conn = new DBConnection().setConnection();
+         PreparedStatement ps = conn.prepareStatement("DELETE FROM reservations WHERE id_reservation = ?")) {
+        ps.setInt(1, reservation.getId_reservation());
+        status = ps.executeUpdate();
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+    return status;
+}
+
     
     public static List<Reservation> searchRecords(String keyword) {
         List<Reservation> list = new ArrayList<>();
